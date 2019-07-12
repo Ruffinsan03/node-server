@@ -2,15 +2,15 @@
 //parse a query string with your web server
 
 
-var http = required ('http');
-var server = http.createserver(function (req, res){;
+var http = require('http');
+var server = http.createServer(function (req, res){;
     res.writeHead(200,{'Content-Type': 'text/plain'});
     res.end('How ya like me now');
 });
 
-server.listen(3000, '127.0.0.1'); 
+server.listen(8080, '127.0.0.1'); 
 
-console.listen ('Now listening to port 8080');
+console.log ('Now listening to port 8080');
 
 //Work in progress -- next step is getting the command line and console to speak to each other
 //Working more on end of month group presentation tonight and will tackle this exercise over the weekend 
